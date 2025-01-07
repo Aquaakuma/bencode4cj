@@ -1,0 +1,128 @@
+{"tag":1,"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"step":0,"startTime":"2025-01-05T23:36:29.1921111+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"checkResults":[],"stepKind":{"lifecycle":0},"startTime":1736091389192447800,"checksPassed":0,"duration":16400,"kind":"step"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"caseName":"testDecodeValidInteger","isBench":false},"startTime":"2025-01-05T23:36:29.1926266+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389192718500,"checksPassed":1,"duration":119200,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"caseName":"testDecodeValidInteger","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"caseName":"testDecodeValidNegative","isBench":false},"startTime":"2025-01-05T23:36:29.1991984+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389199252900,"checksPassed":1,"duration":33400,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"caseName":"testDecodeValidNegative","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"caseName":"testDecodeInvalidOctal","isBench":false},"startTime":"2025-01-05T23:36:29.1994081+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389199447000,"checksPassed":1,"duration":190800,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"caseName":"testDecodeInvalidOctal","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"caseName":"testDecodeInvalidNegativeZero","isBench":false},"startTime":"2025-01-05T23:36:29.1997094+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389199747200,"checksPassed":1,"duration":39900,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"caseName":"testDecodeInvalidNegativeZero","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"caseName":"testDecodeMissingEnd","isBench":false},"startTime":"2025-01-05T23:36:29.1998604+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389199898200,"checksPassed":1,"duration":93800,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"caseName":"testDecodeMissingEnd","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"caseName":"testDecodeMissingIAtStart","isBench":false},"startTime":"2025-01-05T23:36:29.2000577+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389200094000,"checksPassed":1,"duration":35700,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"caseName":"testDecodeMissingIAtStart","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":1,"suiteId":{"groupName":"bencode4cj.tests","suiteName":"TestBencodeDecoderInteger"},"step":3,"startTime":"2025-01-05T23:36:29.2001859+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"checkResults":[],"stepKind":{"lifecycle":3},"startTime":1736091389200215800,"checksPassed":0,"duration":13500,"kind":"step"}}
+	<-%#&->	
+{"tag":1,"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"step":0,"startTime":"2025-01-05T23:36:29.2003453+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"checkResults":[],"stepKind":{"lifecycle":0},"startTime":1736091389200377800,"checksPassed":0,"duration":1300,"kind":"step"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeValidString","isBench":false},"startTime":"2025-01-05T23:36:29.2004158+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389200451700,"checksPassed":1,"duration":84200,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeValidString","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeEmptyString","isBench":false},"startTime":"2025-01-05T23:36:29.2005978+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389200634000,"checksPassed":1,"duration":20600,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeEmptyString","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeInvalidStringMissingColon","isBench":false},"startTime":"2025-01-05T23:36:29.2007337+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389200767500,"checksPassed":1,"duration":40000,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeInvalidStringMissingColon","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeInvalidStringLengthExceedsData","isBench":false},"startTime":"2025-01-05T23:36:29.2008669+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389200900800,"checksPassed":1,"duration":50900,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeInvalidStringLengthExceedsData","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeInvalidStringLengthLessThanZero","isBench":false},"startTime":"2025-01-05T23:36:29.2010176+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389201053800,"checksPassed":1,"duration":33100,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeInvalidStringLengthLessThanZero","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeInvalidStringInvalidLength","isBench":false},"startTime":"2025-01-05T23:36:29.2011466+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389201179800,"checksPassed":1,"duration":32400,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeInvalidStringInvalidLength","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeInvalidStringLengthCannotParse","isBench":false},"startTime":"2025-01-05T23:36:29.2012787+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389201372000,"checksPassed":1,"duration":36000,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"caseName":"testDecodeInvalidStringLengthCannotParse","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":1,"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderStringTests"},"step":3,"startTime":"2025-01-05T23:36:29.2014667+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"checkResults":[],"stepKind":{"lifecycle":3},"startTime":1736091389201494400,"checksPassed":0,"duration":4600,"kind":"step"}}
+	<-%#&->	
+{"tag":1,"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"step":0,"startTime":"2025-01-05T23:36:29.2015477+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"checkResults":[],"stepKind":{"lifecycle":0},"startTime":1736091389201575600,"checksPassed":0,"duration":5400,"kind":"step"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"caseName":"testDecodeEmptyList","isBench":false},"startTime":"2025-01-05T23:36:29.2016141+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389201651500,"checksPassed":1,"duration":44700,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"caseName":"testDecodeEmptyList","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"caseName":"testDecodeIntegerList","isBench":false},"startTime":"2025-01-05T23:36:29.2017598+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389201795900,"checksPassed":1,"duration":38500,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"caseName":"testDecodeIntegerList","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"caseName":"testDecodeStringList","isBench":false},"startTime":"2025-01-05T23:36:29.2018934+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389201926500,"checksPassed":1,"duration":34300,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"caseName":"testDecodeStringList","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"caseName":"testDecodeNestedList","isBench":false},"startTime":"2025-01-05T23:36:29.2020193+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"lifecycle":1},"startTime":1736091389202055100,"checksPassed":0,"duration":5900,"kind":"step"},{"checkResults":[{"diffMessage":[{"code":1,"color":2},{"code":0,"text":"result.toString().trimAscii()"},{"code":1,"color":7},{"code":0,"text":" != "},{"code":1,"color":2},{"code":0,"text":"[1, 2, [\"spam\", \"eggs\"]]"},{"code":1,"color":7},{"code":2},{"code":0,"text":"    "},{"code":0,"text":"result.toString().trimAscii(): \""},{"code":1,"color":0},{"code":0,"text":"["},{"code":1,"color":7},{"code":0,"text":"[1,"},{"code":1,"color":1},{"code":0,"text":"·"},{"code":1,"color":7},{"code":0,"text":"2"},{"code":1,"color":0},{"code":0,"text":"]"},{"code":1,"color":7},{"code":0,"text":","},{"code":1,"color":1},{"code":0,"text":"·"},{"code":1,"color":7},{"code":0,"text":"[\"spam\","},{"code":1,"color":1},{"code":0,"text":"·"},{"code":1,"color":7},{"code":0,"text":"\"eggs\"]]"},{"code":0,"text":"\""},{"code":2},{"code":0,"text":"    "},{"code":0,"text":"     "},{"code":0,"text":"[1, 2, [\"spam\", \"eggs\"]]: \""},{"code":1,"color":0},{"code":0,"text":"·"},{"code":1,"color":7},{"code":0,"text":"[1,"},{"code":1,"color":1},{"code":0,"text":" "},{"code":1,"color":7},{"code":0,"text":"2"},{"code":1,"color":0},{"code":0,"text":"·"},{"code":1,"color":7},{"code":0,"text":","},{"code":1,"color":1},{"code":0,"text":" "},{"code":1,"color":7},{"code":0,"text":"[\"spam\","},{"code":1,"color":1},{"code":0,"text":" "},{"code":1,"color":7},{"code":0,"text":"\"eggs\"]]"},{"code":0,"text":"\""},{"code":2},{"code":0,"text":"    "},{"code":0,"text":"                                "},{"code":1,"color":0},{"code":0,"text":"-"},{"code":1,"color":7},{"code":0,"text":"==="},{"code":1,"color":1},{"code":0,"text":"+"},{"code":1,"color":7},{"code":0,"text":"="},{"code":1,"color":0},{"code":0,"text":"-"},{"code":1,"color":7},{"code":0,"text":"="},{"code":1,"color":1},{"code":0,"text":"+"},{"code":1,"color":7},{"code":0,"text":"========"},{"code":1,"color":1},{"code":0,"text":"+"},{"code":1,"color":7},{"code":0,"text":"========"},{"code":2}],"kind":true}],"stepKind":{"testArgs":null},"startTime":1736091389202062700,"checksPassed":0,"duration":323500,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"caseName":"testDecodeNestedList","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"caseName":"testDecodeInvalidListMissingEnd","isBench":false},"startTime":"2025-01-05T23:36:29.2028726+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389202910900,"checksPassed":1,"duration":60000,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"caseName":"testDecodeInvalidListMissingEnd","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"caseName":"testDecodeInvalidListMissingLAtStart","isBench":false},"startTime":"2025-01-05T23:36:29.203034+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389203068200,"checksPassed":1,"duration":39500,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"caseName":"testDecodeInvalidListMissingLAtStart","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":1,"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderListTests"},"step":3,"startTime":"2025-01-05T23:36:29.2031622+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"checkResults":[],"stepKind":{"lifecycle":3},"startTime":1736091389203192000,"checksPassed":0,"duration":1800,"kind":"step"}}
+	<-%#&->	
+{"tag":1,"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderDictTests"},"step":0,"startTime":"2025-01-05T23:36:29.2032389+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"checkResults":[],"stepKind":{"lifecycle":0},"startTime":1736091389203268800,"checksPassed":0,"duration":1000,"kind":"step"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderDictTests"},"caseName":"testDecodeEmptyDict","isBench":false},"startTime":"2025-01-05T23:36:29.2033069+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389203340200,"checksPassed":1,"duration":53100,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderDictTests"},"caseName":"testDecodeEmptyDict","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderDictTests"},"caseName":"testDecodeSimpleDict","isBench":false},"startTime":"2025-01-05T23:36:29.2034639+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389203498300,"checksPassed":1,"duration":99800,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderDictTests"},"caseName":"testDecodeSimpleDict","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderDictTests"},"caseName":"testDecodeNestedDict","isBench":false},"startTime":"2025-01-05T23:36:29.2037019+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389203738300,"checksPassed":1,"duration":47400,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderDictTests"},"caseName":"testDecodeNestedDict","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderDictTests"},"caseName":"testDecodeInvalidDictMissingEnd","isBench":false},"startTime":"2025-01-05T23:36:29.2038557+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389203895200,"checksPassed":1,"duration":78600,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderDictTests"},"caseName":"testDecodeInvalidDictMissingEnd","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":0,"caseId":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderDictTests"},"caseName":"testDecodeInvalidDictMissingDAtStart","isBench":false},"startTime":"2025-01-05T23:36:29.2040365+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"subResults":[{"checkResults":[],"stepKind":{"testArgs":null},"startTime":1736091389204070500,"checksPassed":1,"duration":37900,"kind":"step"}],"id":{"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderDictTests"},"caseName":"testDecodeInvalidDictMissingDAtStart","isBench":false},"renderOptions":{"baseline":null},"kind":"case"}}
+	<-%#&->	
+{"tag":1,"suiteId":{"groupName":"bencode4cj.tests","suiteName":"BencodeDecoderDictTests"},"step":3,"startTime":"2025-01-05T23:36:29.2041663+08:00"}
+	<-%#&->	
+{"tag":2,"stepResult":{"checkResults":[],"stepKind":{"lifecycle":3},"startTime":1736091389204193600,"checksPassed":0,"duration":1700,"kind":"step"}}
+	<-%#&->	

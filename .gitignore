@@ -1,0 +1,11 @@
+.cache
+*/.cache
+.vscode
+*/.vscode
+src/*.macrocall
+*/src/*.macrocall
+target/
+*/target/
+*/*.exe
+*/*.bchir2
+*/*.cjo
