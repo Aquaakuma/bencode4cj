@@ -7,5 +7,5 @@ public interface IBencodeDecoder {
     func decodeString(): JsonString
     func decodeList(): JsonArray
     func decodeDict(): JsonObject
-    func decode():JsonValue
+    func decode(): JsonValue
 }

@@ -1,8 +1,19 @@
 package bencode4cj.services
 
-import bencode4cj.services.common_constant.*
+
 import encoding.json.*
 import std.collection.*
+
+public const ASCII_MINUS: Byte = 45
+public const ASCII_0: Byte = 48
+public const ASCII_1: Byte = 49
+public const ASCII_9: Byte = 57
+public const ASCII_COLON: Byte = 58
+public const ASCII_d: Byte = 100
+public const ASCII_e: Byte = 101
+public const ASCII_i: Byte = 105
+public const ASCII_l: Byte = 108
+
 
 
 public class BencodeDecoder <: IBencodeDecoder {
@@ -159,21 +170,6 @@ public class BencodeDecoder <: IBencodeDecoder {
 
         // 解析字符串
         var charList: ArrayList<Byte> = ArrayList<Byte>()
-
-        // var parsedLength: Int64 = 0
-        // while (let Some(currentChar) <- currentChar()) {
-        //     charList.append(currentChar)
-        //     probe++
-            
-        //     parsedLength++
-        //     if (parsedLength == strLength) {
-        //         break
-        //     }           
-        // }
-
-        // if (parsedLength != strLength) {
-        //     throw Exception("Invalid bencoded value: Out-of-Bounds Access")
-        // }
 
         for (_ in 0..strLength) {
             if (let Some(currentChar) <- currentChar()) {

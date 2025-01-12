@@ -2,7 +2,8 @@ package bencode4cj.services
 
 import encoding.json.*
 import std.collection.*
-import bencode4cj.services.common_constant.*
+import std.core.*
+
 
 public class BencodeEncoder <: IBencodeEncoder {
     private let uncodedValue: JsonValue
@@ -11,60 +12,60 @@ public class BencodeEncoder <: IBencodeEncoder {
         this.uncodedValue = uncodedValue
     }
 
-    public func encodeInteger(): ArrayList<Byte> {
+    public func encodeInteger(): String {
         // 利用ArrayList的特性，拼接字符串编码
-        let encodedInteger: ArrayList<Byte> = ArrayList()
-        encodedInteger.append(ASCII_i)
+        let encodedInteger = StringBuilder()
+        encodedInteger.append('i')
 
         // 解析JsonInt
         if (uncodedValue is JsonInt) {
             let integer: Int64 = uncodedValue.asInt().getValue()
-            encodedInteger.appendAll(integer.toString().toArray())
+            encodedInteger.append(integer.toString())
         } else {
             throw Exception("Invalid json object: json is not an JsonInt")
         }
 
-        encodedInteger.append(ASCII_e)
+        encodedInteger.append('e')
 
-        return encodedInteger
+        return encodedInteger.toString()
     }
 
-    public func encodeString(): ArrayList<Byte> {
+    public func encodeString(): String {
         // 计算长度，然后拼接
 
-        let encodedString: ArrayList<Byte> = ArrayList()
+        let encodedString = StringBuilder()
 
         // 解析JsonString
         if (uncodedValue is JsonString) {
             let string: String = uncodedValue.asString().getValue()
             let strLength: Int64 = string.size
-            encodedString.appendAll(strLength.toString().toArray())
-            encodedString.append(ASCII_COLON)
-            encodedString.appendAll(string.toArray())
+            encodedString.append(strLength.toString())
+            encodedString.append(':')
+            encodedString.append(string)
         } else {
             throw Exception("Invalid json object: json is not an JsonString")
         }
 
-        return encodedString
+        return encodedString.toString()
     }
-    public func encodeList(): ArrayList<Byte> {
+    public func encodeList(): String {
         // 第一个字符放l，然后遍历列表，解码元素，拼接，末尾添e
-        let encodedList: ArrayList<Byte> = ArrayList()
-        encodedList.append(ASCII_l) // 起始字符'l'
+        let encodedList = StringBuilder()
+        encodedList.append('l') // 起始字符'l'
         if (uncodedValue is JsonArray) {
             for (jsonValueItem in uncodedValue.asArray().getItems()) {
                 let encodeder = BencodeEncoder(jsonValueItem)
                 let encodedItem = encodeder.encode()
-                encodedList.appendAll(encodedItem)
+                encodedList.append(encodedItem)
             }
         }
-        encodedList.append(ASCII_e)
-        return encodedList
+        encodedList.append('e')
+        return encodedList.toString()
     }
-    public func encodeDict(): ArrayList<Byte> {
+    public func encodeDict(): String {
         // 第一个字符放d，然后遍历字典，解码元素，拼接，末尾添e
-        let encodedDict: ArrayList<Byte> = ArrayList()
-        encodedDict.append(ASCII_d)
+        let encodedDict = StringBuilder()
+        encodedDict.append('d') // 起始字符'd'
 
         // 编码字典
         if (uncodedValue is JsonObject) {
@@ -79,16 +80,16 @@ public class BencodeEncoder <: IBencodeEncoder {
                 let encodederOfValue = BencodeEncoder(value)
                 let encodedValue = encodederOfValue.encode()
 
-                encodedDict.appendAll(encodedKey)
-                encodedDict.appendAll(encodedValue)
+                encodedDict.append(encodedKey)
+                encodedDict.append(encodedValue)
             }
         }
 
-        encodedDict.append(ASCII_e)
-        return encodedDict
+        encodedDict.append('e')
+        return encodedDict.toString()
     }
 
-    public func encode(): ArrayList<Byte> {
+    public func encode(): String {
         match (uncodedValue.kind()) {
             case JsInt => return encodeInteger()
             case JsString => return encodeString()
