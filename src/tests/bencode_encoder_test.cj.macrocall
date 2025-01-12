@@ -1,0 +1,163 @@
+package bencode4cj.tests
+
+import bencode4cj.services.*
+import std.collection.*
+import std.unittest.*
+import std.unittest.testmacro.*
+import encoding.json.*
+
+
+/* ===== Emitted by MacroCall @Test in bencode_encoder_test.cj:10:1 ===== */
+/* 10.1 */@Attribute[TEST_GENERATED] class BencodeEncodeTest <: TestClass {
+/* 10.2 */    @Attribute[TestCase_0]
+/* 10.3 */    public func testEncodeInteger(): Unit {
+/* 10.4 */        let encoder = BencodeEncoder(JsonInt(123))
+/* 10.5 */        let encoded = encoder.encode()
+/* 10.6 */        expectEqual("encoded", "i123e", encoded, "i123e")
+/* 10.7 */    }
+/* 10.8 */    
+/* 10.9 */    @Attribute[TestCase_1]
+/* 10.10 */    public func testEncodeString(): Unit {
+/* 10.11 */        let encoder = BencodeEncoder(JsonString("hello"))
+/* 10.12 */        let encoded = encoder.encode()
+/* 10.13 */        expectEqual("encoded", "5:hello", encoded, "5:hello")
+/* 10.14 */    }
+/* 10.15 */    
+/* 10.16 */    @Attribute[TestCase_2]
+/* 10.17 */    public func testEncodeList(): Unit {
+/* 10.18 */        let encoder = BencodeEncoder(JsonArray([JsonInt(1), JsonInt(2), JsonInt(3)]))
+/* 10.19 */        let encoded = encoder.encode()
+/* 10.20 */        expectEqual("encoded", "li1ei2ei3ee", encoded, "li1ei2ei3ee")
+/* 10.21 */    }
+/* 10.22 */    
+/* 10.23 */    @Attribute[TestCase_3]
+/* 10.24 */    public func testEncodeDict(): Unit {
+/* 10.25 */        let encoder = BencodeEncoder(JsonValue.fromStr("{\"foo\": 1, \"bar\": 2}"))
+/* 10.26 */        let encoded = encoder.encode()
+/* 10.27 */        expectEqual("encoded", "d3:bari2e3:fooi1ee", encoded, "d3:bari2e3:fooi1ee")
+/* 10.28 */    }
+/* 10.29 */    
+/* 10.30 */    @Attribute[TestCase_4]
+/* 10.31 */    public func testEncodeNestedList(): Unit {
+/* 10.32 */        let encoder = BencodeEncoder(JsonArray([JsonArray([JsonInt(1), JsonInt(2)]), JsonArray([JsonInt(3), JsonInt(4)])]))
+/* 10.33 */        let encoded = encoder.encode()
+/* 10.34 */        expectEqual("encoded", "lli1ei2eeli3ei4eee", encoded, "lli1ei2eeli3ei4eee")
+/* 10.35 */    }
+/* 10.36 */    
+/* 10.37 */    @Attribute[TestCase_5]
+/* 10.38 */    public func testEncodeNestedDict(): Unit {
+/* 10.39 */        let encoder = BencodeEncoder(JsonValue.fromStr("{\"foo\": {\"bar\": 1}, \"baz\": {\"qux\": [1, 2]}}"))
+/* 10.40 */        let encoded = encoder.encode()
+/* 10.41 */        expectEqual("encoded", "d3:bazd3:quxli1ei2eee3:food3:bari1eee", encoded, "d3:bazd3:quxli1ei2eee3:food3:bari1eee")
+/* 10.42 */    }
+/* 10.43 */    
+/* 10.44 */    init() {
+/* 10.45 */    }
+/* 10.46 */    private func classConfiguration(): Configuration {
+/* 10.47 */        let configuration = Configuration()
+/* 10.48 */        
+/* 10.49 */        return configuration
+/* 10.50 */    }
+/* 10.51 */    public override func asTestSuite(): TestSuite {
+/* 10.52 */        
+/* 10.53 */        let suiteConfiguration = classConfiguration()
+/* 10.54 */        let suiteBuilder = TestSuite.builder("BencodeEncodeTest").configure(suiteConfiguration)
+/* 10.55 */        let m___ = TimeNow()
+/* 10.56 */        suiteConfiguration.set < Measurement >("measurement", m___)
+/* 10.57 */        
+/* 10.58 */        { => let caseConfig = Configuration()
+/* 10.59 */            
+/* 10.60 */            let testEncodeIntegerTestFunc = { => testEncodeInteger();() }
+/* 10.61 */            suiteBuilder.add(
+/* 10.62 */            UnitTestCase.create(
+/* 10.63 */            "testEncodeInteger",
+/* 10.64 */            configuration: caseConfig,
+/* 10.65 */            body: testEncodeIntegerTestFunc
+/* 10.66 */            )
+/* 10.67 */            )
+/* 10.68 */            
+/* 10.69 */        }()
+/* 10.70 */        
+/* 10.71 */        
+/* 10.72 */        { => let caseConfig = Configuration()
+/* 10.73 */            
+/* 10.74 */            let testEncodeStringTestFunc = { => testEncodeString();() }
+/* 10.75 */            suiteBuilder.add(
+/* 10.76 */            UnitTestCase.create(
+/* 10.77 */            "testEncodeString",
+/* 10.78 */            configuration: caseConfig,
+/* 10.79 */            body: testEncodeStringTestFunc
+/* 10.80 */            )
+/* 10.81 */            )
+/* 10.82 */            
+/* 10.83 */        }()
+/* 10.84 */        
+/* 10.85 */        
+/* 10.86 */        { => let caseConfig = Configuration()
+/* 10.87 */            
+/* 10.88 */            let testEncodeListTestFunc = { => testEncodeList();() }
+/* 10.89 */            suiteBuilder.add(
+/* 10.90 */            UnitTestCase.create(
+/* 10.91 */            "testEncodeList",
+/* 10.92 */            configuration: caseConfig,
+/* 10.93 */            body: testEncodeListTestFunc
+/* 10.94 */            )
+/* 10.95 */            )
+/* 10.96 */            
+/* 10.97 */        }()
+/* 10.98 */        
+/* 10.99 */        
+/* 10.100 */        { => let caseConfig = Configuration()
+/* 10.101 */            
+/* 10.102 */            let testEncodeDictTestFunc = { => testEncodeDict();() }
+/* 10.103 */            suiteBuilder.add(
+/* 10.104 */            UnitTestCase.create(
+/* 10.105 */            "testEncodeDict",
+/* 10.106 */            configuration: caseConfig,
+/* 10.107 */            body: testEncodeDictTestFunc
+/* 10.108 */            )
+/* 10.109 */            )
+/* 10.110 */            
+/* 10.111 */        }()
+/* 10.112 */        
+/* 10.113 */        
+/* 10.114 */        { => let caseConfig = Configuration()
+/* 10.115 */            
+/* 10.116 */            let testEncodeNestedListTestFunc = { => testEncodeNestedList();() }
+/* 10.117 */            suiteBuilder.add(
+/* 10.118 */            UnitTestCase.create(
+/* 10.119 */            "testEncodeNestedList",
+/* 10.120 */            configuration: caseConfig,
+/* 10.121 */            body: testEncodeNestedListTestFunc
+/* 10.122 */            )
+/* 10.123 */            )
+/* 10.124 */            
+/* 10.125 */        }()
+/* 10.126 */        
+/* 10.127 */        
+/* 10.128 */        { => let caseConfig = Configuration()
+/* 10.129 */            
+/* 10.130 */            let testEncodeNestedDictTestFunc = { => testEncodeNestedDict();() }
+/* 10.131 */            suiteBuilder.add(
+/* 10.132 */            UnitTestCase.create(
+/* 10.133 */            "testEncodeNestedDict",
+/* 10.134 */            configuration: caseConfig,
+/* 10.135 */            body: testEncodeNestedDictTestFunc
+/* 10.136 */            )
+/* 10.137 */            )
+/* 10.138 */            
+/* 10.139 */        }()
+/* 10.140 */        
+/* 10.141 */        return suiteBuilder.build()
+/* 10.142 */    }
+/* 10.143 */}
+/* 10.144 */
+/* 10.145 */
+/* 10.146 */extend TestPackage {
+/* 10.147 */    @Attribute[TEST_REGISTER]
+/* 10.148 */    func registerBencodeEncodeTest() {
+/* 10.149 */        registerSuite({ => BencodeEncodeTest().asTestSuite() })
+/* 10.150 */    }
+/* 10.151 */}
+/* 10.152 */
+/* ===== End of the Emit ===== */
