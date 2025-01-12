@@ -20,7 +20,7 @@ public class BencodeDecoder <: IBencodeDecoder {
     private let encodedValue: Array<Byte>
     public var probe: Int64 = 0
 
-    public BencodeDecoder(encodedValue: String) {
+    public BencodeDecoder(encodedValue: Array<Byte>) {
         this.encodedValue = encodedValue.toArray()
     }
 
