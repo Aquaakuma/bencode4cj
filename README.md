@@ -2,6 +2,11 @@
 
 Bencode 是一种简单的编码格式，用于表示数据结构，如列表、字典等。它常用于 BitTorrent 协议中。本库用仓颉encoding库的 `JsonArray` 和 `JsonObject` 表示列表和字典。
 
+## TODO
+- [x] 无法把piece的字符串解析成数组，不能非Unicode字符转换成字符串。
+
+- [x] 构造出一直新的数据类型，使其能嵌套存放bencode的基本类型，可以用来解决piece解析问题。
+
 ## 语法
 
 Bencode 的语法如下：
